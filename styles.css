@@ -1,0 +1,396 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Latar belakang netral */
+    color: #000;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.top-footer {
+    width: 100%;
+    background-color: #fff; /* Latar belakang putih untuk header */
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px; /* Jarak dari kiri */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 100px; /* Ukuran logo lebih kecil */
+    height: auto;
+    margin-right: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.2); /* Perbesar logo saat hover */
+}
+
+.container {
+    max-width: 600px;
+    margin: 100px auto; /* Memberi jarak dari atas agar tidak tertutup header */
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    border: 2px solid #ff0000; /* Border merah */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.container h2 {
+    text-align: center;
+    color: #ff0000; /* Warna teks merah */
+    margin-bottom: 20px;
+}
+
+.container label {
+    display: block;
+    margin-top: 20px;
+    color: #555;
+}
+
+.container input[type="text"],
+.container input[type="email"],
+.container input[type="tel"],
+.container input[type="date"],
+.container input[type="time"],
+.container input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.container input[type="text"]:focus,
+.container input[type="email"]:focus,
+.container input[type="tel"]:focus,
+.container input[type="date"]:focus,
+.container input[type="time"]:focus {
+    border-color: #ff0000; /* Warna border fokus merah */
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+
+.container input[type="submit"] {
+    background-color: #ff0000; /* Warna tombol merah */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.container input[type="submit"]:hover {
+    background-color: #e60000; /* Warna tombol saat hover lebih gelap */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.success-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+.success-container h2 {
+    color: #03b609;
+    margin-bottom: 20px;
+}
+
+.success-container p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.success-container .qr-code img {
+    width: 350px; /* Ukuran QR code lebih besar */
+    height: auto;
+    margin: 20px 0;
+}
+
+.success-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00ff08;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.success-container a:hover {
+    background-color: #009e00;
+}
+
+.error-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    animation: slideIn 1s ease-in-out;
+}
+
+.error-container h2 {
+    color: #dc3545;
+    margin-bottom: 20px;
+}
+
+.error-container p {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.error-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.error-container a:hover {
+    background-color: #c82333;
+}
+
+/* Footer CSS */
+.footer {
+    width: 100%;
+    background-color: #ffffff; /* Warna latar belakang biru tua */
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+    box-sizing: border-box;
+    margin-top: auto;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+.footer .left, .footer .right {
+    display: flex;
+    align-items: center;
+}
+
+.footer .left {
+    flex: 1;
+}
+
+.footer .right {
+    flex: 1;
+    justify-content: flex-end;
+}
+
+/* Media Query untuk tampilan responsif */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer div {
+        padding: 5px 0;
+    }
+
+    .footer a {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+/* CSS Admin Dashboard */
+.admin-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow-x: auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.admin-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #ff0000;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+.table-container .edit, .table-container .delete {
+    padding: 5px 10px;
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.table-container .edit {
+    background-color: #ffcc00;
+    color: #000;
+}
+
+.table-container .edit:hover {
+    background-color: #e6b800;
+}
+
+.table-container .delete {
+    background-color: #dc3545;
+}
+
+.table-container .delete:hover {
+    background-color: #c82333;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    background-color: #e60000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+form table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+form table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+form table td label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+form table td input[type="text"],
+form table td input[type="email"],
+form table td input[type="tel"],
+form table td input[type="date"],
+form table td input[type="time"] {
+    width: calc(100% - 22px); /* Mengurangi padding untuk input */
+    padding: 10px; /* Menambahkan padding */
+    margin: 5px 0; /* Menambahkan margin */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Border radius */
+    box-sizing: border-box; /* Box sizing */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transisi */
+}
+
+form table td input[type="text"]:focus,
+form table td input[type="email"]:focus,
+form table td input[type="tel"]:focus,
+form table td input[type="date"]:focus,
+form table td input[type="time"]:focus {
+    border-color: #ff0000; /* Warna border fokus merah */
+    box-shadow: 0 0 5px rgba(255, 77, 77, 0.5);
+}
+
+form table td input[type="submit"] {
+    width: auto;
+    margin-top: 20px;
+    background-color: #ff0000; /* Warna tombol merah */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+form table td input[type="submit"]:hover {
+    background-color: #e60000; /* Warna tombol saat hover lebih gelap */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

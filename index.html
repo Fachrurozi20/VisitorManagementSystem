@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitor Registration Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <footer class = "top-footer">
+        <img src = "logo4.png" alt="logo" class="logo">
+    </footer>
+
+    <div class="container">
+        <h2>Visitor Registration Form</h2>
+        <form id="visitorForm" action="submit.php" method="post">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="building">Building:</label>
+            <input type="text" id="building" name="building" required>
+            
+            <label for="purpose">Purpose:</label>
+            <input type="text" id="purpose" name="purpose" required>
+            
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="checkin">Check-in Time:</label>
+            <input type="time" id="checkin" name="checkin" required>
+            
+            <label for="checkout">Check-out Time:</label>
+            <input type="time" id="checkout" name="checkout" required>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-left">
+            <p>&copy; PT TELEKOMUNIKASI SELULAR, 2024. </p>
+        </div>
+        <div class="footer-right">
+            <a href="https://www.telkomsel.com/privacy-policy">Privacy Policy</a> 
+            <a href="https://www.telkomsel.com/terms-and-conditions">Terms of Service</a>
+            <a href="https://www.telkomsel.com/support/contact-us">Contact Us</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
